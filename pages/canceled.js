@@ -4,7 +4,7 @@ import { ButtonLink, Center, Footer, Header } from '@/components'
 import { BsBagXFill } from 'react-icons/bs'
 import styled from 'styled-components'
 
-const canceled = () => {
+const Canceled = () => {
   const StyledCanceled = styled.div`
     width: 1000px;
     margin: 160px auto auto;
@@ -34,4 +34,4 @@ const canceled = () => {
   )
 }
 
-export default canceled
+export default Canceled

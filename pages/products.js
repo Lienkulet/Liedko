@@ -8,7 +8,7 @@ import { authOptions } from './api/auth/[...nextauth]'
 import { getServerSession } from 'next-auth'
 
 
-const products = ({products, wishedProducts}) => {
+const Products = ({products, wishedProducts}) => {
   return (
     <>
         <Title>All products</Title>
@@ -17,7 +17,7 @@ const products = ({products, wishedProducts}) => {
   )
 }
 
-export default products
+export default Products
 
 export async function getServerSideProps(ctx) {
     await mongooseConnect();

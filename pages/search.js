@@ -48,14 +48,14 @@ export default function SearchPage() {
                 autoFocus />
             {products.length === 0 &&
              phrase !== '' && (
-                <h2>0 Products found for "{phrase}"</h2>
+                <h2>0 Products found for `{phrase}`</h2>
             )}    
             {loading && (
                 <Spinner fullWidth={true}/>
             )}
             {!loading && products.length > 0 && (
                 <>
-                <Title>{products.length} Products found for "{phrase}"</Title>
+                <Title>{products.length} Products found for `{phrase}`</Title>
                 <ProductsGrid products={products} />
                 </>
             )}
