@@ -10,7 +10,11 @@ import styled from "styled-components";
 import { authOptions } from "../api/auth/[...nextauth]";
 import { WishedProduct } from "@/models/WishedProduct";
 
-const CategoryHeader = styled.div`
+
+
+export default function CategoryPage({category, subCategories,products:originalProducts, wishedProducts}) {
+
+    const CategoryHeader = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -37,7 +41,6 @@ const Filter = styled.div`
     }
 `;
 
-export default function CategoryPage({category, subCategories,products:originalProducts, wishedProducts}) {
     const defaultSorting = '_id-dessc';
     const defaultFilterValues = category.properties
     .map(p => ({ name: p.name, value: 'all' }));

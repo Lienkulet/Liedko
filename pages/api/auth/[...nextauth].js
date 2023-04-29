@@ -15,8 +15,6 @@ export const authOptions = {
  
 };
 
-// 30: 00
-
 export default NextAuth(authOptions);
 
 
