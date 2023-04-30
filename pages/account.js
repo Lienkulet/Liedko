@@ -3,6 +3,7 @@ import axios from "axios";
 import { signIn, signOut, useSession } from "next-auth/react";
 import { RevealWrapper } from "next-reveal";
 import { useEffect, useState } from "react";
+import { toast } from "react-hot-toast";
 import styled, { css } from "styled-components";
 
 const Box = styled.div`
@@ -127,7 +128,7 @@ export default function AccountPage() {
     const saveAddress = async () => {
         const data = { name, email, city, streetAddress, postalCode, country }
         await axios.put('/api/address', data);
-        // 39: 29
+        toast.success('Details saved successfully!');
     }
 
     const productRemoved = (removeId) => {

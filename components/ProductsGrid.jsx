@@ -12,10 +12,8 @@ const StyledProductsGrid = styled.div`
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 20px;
-  gap: 50px 40px;
-
- 
+  margin-top: 30px;
+  gap: 60px 40px;
 `;
 
 const StyledLoginMessageWrapper = styled.div`

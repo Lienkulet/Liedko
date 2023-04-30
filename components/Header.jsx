@@ -108,11 +108,11 @@ const Header = () => {
         <Wrapper>
           <Logo href={'/'}>Liedko</Logo>
           <StyledNav navMenu={navMenu}>
-            <NavLink href={'/'}>Home</NavLink>
-            <NavLink href={'/products'}>All products</NavLink>
-            <NavLink href={'/categories'}>Categories</NavLink>
-            <NavLink href={'/account'}>Account</NavLink>
-            <NavLink href={'/CartPage'}>Cart ({cartProducts.length})</NavLink>
+            <NavLink href={'/'} onClick={() => setNavMenu(false)}>Home</NavLink>
+            <NavLink href={'/products'} onClick={() => setNavMenu(false)}>All products</NavLink>
+            <NavLink href={'/categories'} onClick={() => setNavMenu(false)}>Categories</NavLink>
+            <NavLink href={'/account'} onClick={() => setNavMenu(false)}>Account</NavLink>
+            <NavLink href={'/CartPage'} onClick={() => setNavMenu(false)}>Cart ({cartProducts.length})</NavLink>
           </StyledNav>
           <SideIcons>
           <Link href={'/search'}>
