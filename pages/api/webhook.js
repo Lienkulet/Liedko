@@ -4,14 +4,15 @@ import { Order } from "@/models/Order";
 
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
-const endpointSecret = "whsec_b3ba03032d6624908af1b262b7f577aa8c7fc553a9af255b056b599f35092edf";
+const endpointSecret = process.env.STRIPE_WEBHOOK_SECRET;
 
 export default async function handler(req, res) {
   await mongooseConnect();
   const sig = req.headers['stripe-signature'];
 
   try {
-    const event = stripe.webhooks.constructEvent(await buffer(req), sig, endpointSecret);
+    const buf = await buffer(req);
+    const event = stripe.webhooks.constructEvent(buf, sig, endpointSecret);
 
     // Handle the event
     switch (event.type) {
@@ -43,11 +44,10 @@ export default async function handler(req, res) {
 
         await Order.create(order);
 
-        const message = 'Order created successfully.';
-        console.log(message);
+        console.log('Order created successfully.');
 
         // Send response to client
-        res.status(200).json({ message });
+        res.status(200).send('success');
 
         break;
 
