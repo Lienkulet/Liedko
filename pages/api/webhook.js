@@ -9,11 +9,13 @@ const endpointSecret = "whsec_b3ba03032d6624908af1b262b7f577aa8c7fc553a9af255b05
 export default async function handler(req, res) {
   await mongooseConnect();
   const sig = req.headers['stripe-signature'];
-  console.log('hhh', req.headers);
+
   let event;
+  const buf = await buffer(req);
+  const rawBody = buf.toString();
 
   try {
-    event = stripe.webhooks.constructEvent(await buffer(req), sig, endpointSecret);
+    event = stripe.webhooks.constructEvent(rawBody, sig, endpointSecret);
   } catch (err) {
     res.status(400).send(`Webhook Error: ${err.message}`);
     return;
