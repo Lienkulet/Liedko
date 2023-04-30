@@ -12,7 +12,8 @@ export default async function handler(req, res) {
 
   try {
     const buf = await buffer(req);
-    const event = stripe.webhooks.constructEvent(buf, sig, endpointSecret);
+    const rawBody = buf.toString();
+    const event = stripe.webhooks.constructEvent(rawBody, sig, endpointSecret);
 
     // Handle the event
     switch (event.type) {
@@ -43,6 +44,8 @@ export default async function handler(req, res) {
         };
 
         await Order.create(order);
+
+        console.log('Order created successfully.');
 
         // Send response to client
         res.status(200).send('success');
