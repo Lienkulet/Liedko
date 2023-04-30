@@ -10,8 +10,11 @@ export default async function handler(req, res) {
   await mongooseConnect();
   const sig = req.headers['stripe-signature'];
 
+  // console.log('sig', sig);
+  // console.log('body', req.body);
+
   try {
-    const buf = await buffer(req);
+    const buf = await buffer(req.body);
     const rawBody = buf.toString();
     const event = stripe.webhooks.constructEvent(rawBody, sig, endpointSecret);
 
