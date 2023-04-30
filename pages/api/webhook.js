@@ -2,9 +2,13 @@ import { mongooseConnect } from "@/lib/mongoose";
 import { buffer } from "micro";
 import { Order } from "@/models/Order";
 
+export const config = {
+  api: { bodyParser: false, }
+};
+
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
-const endpointSecret = "whsec_b3ba03032d6624908af1b262b7f577aa8c7fc553a9af255b056b599f35092edf";
+const signingSecret = process.env.NEXT_SIGNIN_SECRET
 
 export default async function handler(req, res) {
   await mongooseConnect();
@@ -15,7 +19,7 @@ export default async function handler(req, res) {
   const rawBody = buf.toString();
 
   try {
-    event = stripe.webhooks.constructEvent(rawBody, sig, endpointSecret);
+    event = stripe.webhooks.constructEvent(rawBody, sig, signingSecret);
   } catch (err) {
     res.status(400).send(`Webhook Error: ${err.message}`);
     return;
@@ -52,6 +56,3 @@ export default async function handler(req, res) {
   res.send(200);
 }
 
-export const config = {
-  api: { bodyParser: false, }
-};
