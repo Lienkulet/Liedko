@@ -44,8 +44,6 @@ export default async function handler(req, res) {
 
         await Order.create(order);
 
-        console.log('Order created successfully.');
-
         // Send response to client
         res.status(200).send('success');
 
