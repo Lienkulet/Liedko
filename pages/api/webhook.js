@@ -22,17 +22,17 @@ export default async function handler(req, res) {
   // Handle the event
   switch (event.type) {
     case 'checkout.session.completed':
-      const data = event.data.object;
+      const checkoutSessionCompleted  = event.data.object;
 
-      const total = data.metadata.total;
-      const name = data.metadata.name;
-      const email = data.metadata.email;
-      const city = data.metadata.city;
-      const postalCode = data.metadata.postalCode;
-      const streetAddress = data.metadata.streetAddress;
-      const country = data.metadata.country;
-      const line_items = JSON.parse(data.metadata.items);
-      const paid = data.payment_status === 'paid';
+      const total = checkoutSessionCompleted.amount_total;
+      const name = checkoutSessionCompleted.metadata.name;
+      const email = checkoutSessionCompleted.metadata.email;
+      const city = checkoutSessionCompleted.metadata.city;
+      const postalCode = checkoutSessionCompleted.metadata.postalCode;
+      const streetAddress = checkoutSessionCompleted.metadata.streetAddress;
+      const country = checkoutSessionCompleted.metadata.country;
+      const line_items = JSON.parse(checkoutSessionCompleted.metadata.items);
+      const paid = checkoutSessionCompleted.payment_status === 'paid';
      
       await Order.create({
         line_items, name, email, city, postalCode, streetAddress, country, paid, total
@@ -44,11 +44,10 @@ export default async function handler(req, res) {
       console.log(`Unhandled event type ${event.type}`);
   }
 
-  res.status(200).send('ok');
+  // res.status(200).send('ok');
+  response.send(200);
 }
 
-export const config = {
-  api: { bodyParser: false, }
-};
-
-// poise-praise-glow-decent
+// export const config = {
+//   api: { bodyParser: false, }
+// };
