@@ -16,12 +16,15 @@ export default function CategoryPage({category, subCategories,products:originalP
 
     const CategoryHeader = styled.div`
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
 `;
 
 const FiltersWrapper = styled.div`
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
 `;
 

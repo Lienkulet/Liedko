@@ -58,7 +58,12 @@ const ShowAllSquare = styled(Link)`
         transform: scale(1.1);
         transition: all 5s ease;
     }
- 
+    
+
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
+
 `;
 
 export default function Categories({ mainCategories, categoriesProduscts, wishedProducts}) {
@@ -71,23 +76,34 @@ export default function Categories({ mainCategories, categoriesProduscts, wished
                             <CategoryLink href={`/category/${cat._id}`}>Show all</CategoryLink>
                         </CategoryTitle>
                         <CategoryGrid>
-                            {categoriesProduscts[cat._id].map((p, index) => (
+                            {categoriesProduscts[cat._id].length > 0 && categoriesProduscts[cat._id].map((p, index) => (
                                 <RevealWrapper key={p._id} delay={index * 50}>
                                     <ProductBox {...p} wished={wishedProducts.includes(p._id)} />
                                 </RevealWrapper>
                             ))}
 
-                            <RevealWrapper delay={categoriesProduscts[cat._id].length * 50}>
-                                <ShowAllSquare href={`/category/${cat._id}`}>
-                                    Show all
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor"
-                                        className="w-2 h-2">
-                                        <path strokeLinecap="round" strokeLinejoin="round"
-                                            d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-                                    </svg>
-                                </ShowAllSquare>
-                            </RevealWrapper>
+                            {
+                                categoriesProduscts[cat._id].length <= 0 && (
+                                    <h3>No products in this category</h3>
+                                )
+                            }
+
+                            { categoriesProduscts[cat._id].length > 0 && (
+                                <RevealWrapper delay={categoriesProduscts[cat._id].length * 50}>
+                                 <ShowAllSquare href={`/category/${cat._id}`}>
+                                     Show all
+                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                         viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor"
+                                         className="w-2 h-2">
+                                         <path strokeLinecap="round" strokeLinejoin="round"
+                                             d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                                     </svg>
+                                 </ShowAllSquare>
+                             </RevealWrapper>
+                                )
+                            }
+
+                            
                         </CategoryGrid>
                     </CategoryWrapper>
                 ))}

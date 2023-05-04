@@ -1,4 +1,4 @@
-import { ButtonLink, Center, Footer, Header, ShoppingBag } from '@/components';
+import { ButtonLink } from '@/components';
 import { CartContext } from '@/context/StateContext';
 import React, { useContext, useEffect } from 'react'
 import styled from 'styled-components';
@@ -14,8 +14,6 @@ const Success = () => {
 
 
   const StyledSuccess = styled.div`
-    width: 1000px;
-    margin: 160px auto auto;
     background-color: #dcdcdc;
     padding: 50px;
     border-radius: 15px;
@@ -23,13 +21,22 @@ const Success = () => {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    @media screen and (min-width: 800px) {
+      width: 1000px;
+      margin: 160px auto auto;
+    }
   `
 
   const SuccessTitle = styled.h1`
     color: #324d67;
     font-weight: 950;
-    font-size: 40px;
+    text-align: center;
     margin-bottom: 10px;
+
+    @media screen and (min-width: 800px) {
+      font-size: 3rem;
+    }
   `
 
   const SuccessIcon = styled.div`
@@ -55,15 +62,13 @@ const Success = () => {
     <>
         <StyledSuccess>
           <SuccessIcon>
-
-          <BsFillBagCheckFill size={'3rem'} color='green'/>
-
+            <BsFillBagCheckFill size={'3rem'} color='green'/>
           </SuccessIcon>
           <SuccessHeader>
             <SuccessTitle>Thank You For Your Order!</SuccessTitle>
             <SuccessSubTitle>Check your email inbox for the receipt</SuccessSubTitle>
           </SuccessHeader>
-          <ButtonLink href={'/'} primary="true" size='l'>CONTINUE SHOPPING</ButtonLink>
+            <ButtonLink href={'/'} primary="true" size='l'>CONTINUE SHOPPING</ButtonLink>
         </StyledSuccess>
     </>
   )
