@@ -9,11 +9,11 @@ The website is built using Next.js and React frameworks, with content managed us
 - Homepage with featured products, search functionality, and dynamic filtering
 - Product pages with high-quality images, detailed descriptions, and a review system
 - Categories page with all the categories & 3 products from each category
-- Filter System
+- Product Filtering System
 - Shopping cart with real-time updates and checkout functionality
 - Accoun Page with a wishlist and the previous orders that the user made
 - Secure payment processing through Stripe
-- There is also a separate webiste for admins to manage all the content on this website 
+- Separate webiste for admins to manage the website 
 
 ## HomePage
 ![image](https://user-images.githubusercontent.com/104018505/236289069-58146b02-24ba-4a07-b5ad-344e9a09108d.png)
