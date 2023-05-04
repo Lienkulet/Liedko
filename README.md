@@ -3,7 +3,7 @@
 ![image](https://user-images.githubusercontent.com/104018505/236289069-58146b02-24ba-4a07-b5ad-344e9a09108d.png)
 
 Liedko is an online store that specializes in selling electronic devices. 
-The website is built using Next.js and React frameworks, with content managed using MongoDB, NextAuth for logins, and payment processing handled through Stripe.
+The website is built using Next.js and React frameworks, with content managed using MongoDB, NextAuth to log login, and payment processing handled through Stripe.
 
 ## Features
 - Homepage with featured products, search functionality, and dynamic filtering
@@ -13,6 +13,7 @@ The website is built using Next.js and React frameworks, with content managed us
 - Shopping cart with real-time updates and checkout functionality
 - Accoun Page with a wishlist and the previous orders that the user made
 - Secure payment processing through Stripe
+- Preloaders
 - Separate webiste for admins to manage the website 
 
 ## HomePage
