@@ -13,8 +13,13 @@ import { WishedProduct } from "@/models/WishedProduct";
 const CategoryGrid = styled.div`
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
-    /* align-items: center; */
+    align-items: center;
+    /* justify-content: center; */
+    gap: 50px;
+
+    @media screen and (min-width: 800px) {
+        gap: 30px
+    }
 `;
 
 const CategoryTitle = styled.div`
@@ -37,7 +42,10 @@ const CategoryLink = styled(Link)`
 `;
 
 const ShowAllSquare = styled(Link)`
-    display: flex;
+    display: none;
+   
+    @media screen and (min-width: 800px) {
+        display: flex;
     background-color: #ddd;
     height: fit-content;
     width: fit-content;
@@ -58,10 +66,6 @@ const ShowAllSquare = styled(Link)`
         transform: scale(1.1);
         transition: all 5s ease;
     }
-    
-
-    @media screen and (max-width: 800px) {
-      display: none;
     }
 
 `;
