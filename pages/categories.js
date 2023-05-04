@@ -13,12 +13,12 @@ import { WishedProduct } from "@/models/WishedProduct";
 const CategoryGrid = styled.div`
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    /* justify-content: center; */
-    gap: 50px;
-
-    @media screen and (min-width: 800px) {
-        gap: 30px
+    gap: 30px;
+    
+    @media screen and (max-width: 800px) {
+        gap: 50px;
+        align-items: center;
+        /* justify-content: center; */
     }
 `;
 
