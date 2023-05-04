@@ -1,6 +1,6 @@
 ## Liedko Store: An E-Commerce Website
 
-![fiverr kedco](https://user-images.githubusercontent.com/104018505/230379699-66862880-91fc-4d81-9835-cdd3e336d0ce.png)
+![image](https://user-images.githubusercontent.com/104018505/236289069-58146b02-24ba-4a07-b5ad-344e9a09108d.png)
 
 Liedko is an online store that specializes in selling electronic devices. 
 The website is built using Next.js and React frameworks, with content managed using MongoDB, NextAuth for logins, and payment processing handled through Stripe.
@@ -14,14 +14,16 @@ The website is built using Next.js and React frameworks, with content managed us
 - There is also a separate webiste for admins to manage all the content on this website 
 
 ## HomePage
-![kedcvo2](https://user-images.githubusercontent.com/104018505/230379705-7c91fd2c-bec6-40b2-93e5-9f5e3c12a3fc.png)
+![image](https://user-images.githubusercontent.com/104018505/236289069-58146b02-24ba-4a07-b5ad-344e9a09108d.png)
 
 ## All Products Page
+![image](https://user-images.githubusercontent.com/104018505/236289213-84c31f4f-9104-4e7f-a649-741406cad79b.png)
 
 ## Categories Page 
 ![image](https://user-images.githubusercontent.com/104018505/236288771-b609d77a-69cc-4a1b-b3c0-3532c8d04bb8.png)
 
 ## Category Page
+![image](https://user-images.githubusercontent.com/104018505/236289496-f350f133-192d-42a7-afc5-b70e34a22a25.png)
 
 ## Account Page
 ![image](https://user-images.githubusercontent.com/104018505/236288433-ed7e5437-e95d-42a4-b1a0-a71a88d6e7e7.png)
@@ -33,6 +35,6 @@ The website is built using Next.js and React frameworks, with content managed us
 ![image](https://user-images.githubusercontent.com/104018505/236288223-cbd85f17-2dab-4ee6-a8cf-970e0cd7e17b.png)
 
 ## Cart Page
-![pricing](https://user-images.githubusercontent.com/104018505/230381787-2bbbf6d5-07ff-4fb6-956f-65cfdf1b1382.png)
+![image](https://user-images.githubusercontent.com/104018505/236289340-11bcf0e1-df5f-4aef-a3b3-7883e324759b.png)
 
 ## Product Page
