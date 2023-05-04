@@ -13,6 +13,7 @@ The website is built using Next.js and React frameworks, with content managed us
 - Shopping cart with real-time updates and checkout functionality
 - Accoun Page with a wishlist and the previous orders that the user made
 - Secure payment processing through Stripe
+- Discounts and PromoCodes
 - Preloaders
 - Separate webiste for admins to manage the website 
 
