@@ -1,5 +1,5 @@
-import React, { createContext, useContext } from 'react';
-import { Button, ButtonLink, CartIcon, Center } from '.';
+import React, { useContext } from 'react';
+import { Button, ButtonLink, CartIcon } from '.';
 import styled from 'styled-components';
 import { CartContext } from '@/context/StateContext';
 import { RevealWrapper } from 'next-reveal';
@@ -113,7 +113,7 @@ export default function Featured({ product }) {
             <RevealWrapper origin='left' delay={0}>
               <ContentWrapper>
                 <Title>{product.title}</Title>
-                <Desc>{product.description}</Desc>
+                {/* <Desc>{product.description}</Desc> */}
                 <ButtonsWrapper>
                   <ButtonLink href={'/product/' + product._id} outline={1} white={1}>Read more</ButtonLink>
                   <Button white onClick={() => addProduct(product._id)}>
