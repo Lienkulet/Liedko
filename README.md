@@ -8,6 +8,8 @@ The website is built using Next.js and React frameworks, with content managed us
 ## Features
 - Homepage with featured products, search functionality, and dynamic filtering
 - Product pages with high-quality images, detailed descriptions, and a review system
+- Categories page with all the categories & 3 products from each category
+- Filter System
 - Shopping cart with real-time updates and checkout functionality
 - Accoun Page with a wishlist and the previous orders that the user made
 - Secure payment processing through Stripe
@@ -38,3 +40,12 @@ The website is built using Next.js and React frameworks, with content managed us
 ![image](https://user-images.githubusercontent.com/104018505/236289340-11bcf0e1-df5f-4aef-a3b3-7883e324759b.png)
 
 ## Product Page
+
+
+## Admin Page
+![image](https://user-images.githubusercontent.com/104018505/236291670-083cdc53-d552-4514-bd66-4c137f868379.png)
+![image](https://user-images.githubusercontent.com/104018505/236291869-2e1375f2-9307-4295-be28-fae8f1681e75.png)
+![image](https://user-images.githubusercontent.com/104018505/236291911-bfeb1a98-87a0-41c2-a744-7aa26c5c10ec.png)
+![11](https://user-images.githubusercontent.com/104018505/236292416-308fb91b-faa2-4084-b180-d2c638505d05.png)
+![image](https://user-images.githubusercontent.com/104018505/236292564-a94e8273-a953-454a-8584-19df4fe161d9.png)
+![image](https://user-images.githubusercontent.com/104018505/236292706-0d1d8cfe-2297-4f70-b19b-0de2a2211d45.png)
