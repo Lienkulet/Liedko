@@ -40,6 +40,7 @@ The website is built using Next.js and React frameworks, with content managed us
 ![image](https://user-images.githubusercontent.com/104018505/236289340-11bcf0e1-df5f-4aef-a3b3-7883e324759b.png)
 
 ## Product Page
+![image](https://user-images.githubusercontent.com/104018505/236296228-77ce9a7e-f37b-4d68-b1df-6af901a17f5b.png)
 
 
 ## Admin Page
