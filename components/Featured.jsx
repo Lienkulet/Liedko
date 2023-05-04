@@ -114,6 +114,7 @@ export default function Featured({ product }) {
               <ContentWrapper>
                 <Title>{product.title}</Title>
                 {/* <Desc>{product.description}</Desc> */}
+                {/* describe('first', () => { second }) */}
                 <ButtonsWrapper>
                   <ButtonLink href={'/product/' + product._id} outline={1} white={1}>Read more</ButtonLink>
                   <Button white onClick={() => addProduct(product._id)}>
