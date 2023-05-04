@@ -1,38 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Liedko Store: An E-Commerce Website
 
-## Getting Started
+![fiverr kedco](https://user-images.githubusercontent.com/104018505/230379699-66862880-91fc-4d81-9835-cdd3e336d0ce.png)
 
-First, run the development server:
+Liedko is an online store that specializes in selling electronic devices. 
+The website is built using Next.js and React frameworks, with content managed using MongoDB, NextAuth for logins, and payment processing handled through Stripe.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Features
+- Homepage with featured products, search functionality, and dynamic filtering
+- Product pages with high-quality images, detailed descriptions, and a review system
+- Shopping cart with real-time updates and checkout functionality
+- Accoun Page with a wishlist and the previous orders that the user made
+- Secure payment processing through Stripe
+- There is also a separate webiste for admins to manage all the content on this website 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## HomePage
+![kedcvo2](https://user-images.githubusercontent.com/104018505/230379705-7c91fd2c-bec6-40b2-93e5-9f5e3c12a3fc.png)
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## All Products Page
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Categories Page 
+![categorii](https://user-images.githubusercontent.com/104018505/230379697-44e2946f-111f-4b4f-b923-d190534bc122.png)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Category Page
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Account Page
 
-## Learn More
+## Search Page
+![searchbnar](https://user-images.githubusercontent.com/104018505/230379707-bcdc5d25-fd38-44f2-a34c-b8085dae5756.png)
 
-To learn more about Next.js, take a look at the following resources:
+## Cart Page
+![pricing](https://user-images.githubusercontent.com/104018505/230381787-2bbbf6d5-07ff-4fb6-956f-65cfdf1b1382.png)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Product Page
