@@ -19,14 +19,18 @@ The website is built using Next.js and React frameworks, with content managed us
 ## All Products Page
 
 ## Categories Page 
-![categorii](https://user-images.githubusercontent.com/104018505/230379697-44e2946f-111f-4b4f-b923-d190534bc122.png)
+![image](https://user-images.githubusercontent.com/104018505/236288771-b609d77a-69cc-4a1b-b3c0-3532c8d04bb8.png)
 
 ## Category Page
 
 ## Account Page
+![image](https://user-images.githubusercontent.com/104018505/236288433-ed7e5437-e95d-42a4-b1a0-a71a88d6e7e7.png)
+![image](https://user-images.githubusercontent.com/104018505/236288490-f293c767-ce93-42ed-8b8b-1b4d4e9f474d.png)
+![image](https://user-images.githubusercontent.com/104018505/236288529-aae9adc8-c5f9-47a4-8f6b-74cd3325b2a1.png)
+![image](https://user-images.githubusercontent.com/104018505/236288564-7e82ffd9-7206-4041-8949-34217bbffa3c.png)
 
 ## Search Page
-![searchbnar](https://user-images.githubusercontent.com/104018505/230379707-bcdc5d25-fd38-44f2-a34c-b8085dae5756.png)
+![image](https://user-images.githubusercontent.com/104018505/236288223-cbd85f17-2dab-4ee6-a8cf-970e0cd7e17b.png)
 
 ## Cart Page
 ![pricing](https://user-images.githubusercontent.com/104018505/230381787-2bbbf6d5-07ff-4fb6-956f-65cfdf1b1382.png)
