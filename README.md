@@ -44,18 +44,3 @@ The website is built using Next.js and React frameworks, with content managed us
 
 ## Product Page
 ![image](https://user-images.githubusercontent.com/104018505/236296228-77ce9a7e-f37b-4d68-b1df-6af901a17f5b.png)
-
-
-## Admin Page
-![image](https://github.com/Lienkulet/Liedko/assets/104018505/497b93ff-b03e-4409-9c91-b8973f301854)
-
-![image](https://github.com/Lienkulet/Liedko/assets/104018505/21755889-72e5-4178-8373-52a6924173ea)
-
-![image](https://github.com/Lienkulet/Liedko/assets/104018505/d361ad0b-99df-4eb9-b88f-56c6f8b82c4d)
-
-![image](https://github.com/Lienkulet/Liedko/assets/104018505/12595d51-6b08-4859-92e2-1c65ed004084)
-
-![orders](https://github.com/Lienkulet/Liedko/assets/104018505/19f793ed-bb5b-4dcb-b725-92cb756be064)
-
-![image](https://github.com/Lienkulet/Liedko/assets/104018505/ac9a2f67-8e8c-46e0-b10f-6a2981d4c308)
-
