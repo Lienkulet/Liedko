@@ -47,9 +47,15 @@ The website is built using Next.js and React frameworks, with content managed us
 
 
 ## Admin Page
-![image](https://user-images.githubusercontent.com/104018505/236291670-083cdc53-d552-4514-bd66-4c137f868379.png)
-![image](https://user-images.githubusercontent.com/104018505/236291869-2e1375f2-9307-4295-be28-fae8f1681e75.png)
-![image](https://user-images.githubusercontent.com/104018505/236291911-bfeb1a98-87a0-41c2-a744-7aa26c5c10ec.png)
-![11](https://user-images.githubusercontent.com/104018505/236292416-308fb91b-faa2-4084-b180-d2c638505d05.png)
-![image](https://user-images.githubusercontent.com/104018505/236296445-3efc98c0-5d68-4a90-a47d-783dec6bfa56.png)
-![image](https://user-images.githubusercontent.com/104018505/236292706-0d1d8cfe-2297-4f70-b19b-0de2a2211d45.png)
+![image](https://github.com/Lienkulet/Liedko/assets/104018505/497b93ff-b03e-4409-9c91-b8973f301854)
+
+![image](https://github.com/Lienkulet/Liedko/assets/104018505/21755889-72e5-4178-8373-52a6924173ea)
+
+![image](https://github.com/Lienkulet/Liedko/assets/104018505/d361ad0b-99df-4eb9-b88f-56c6f8b82c4d)
+
+![image](https://github.com/Lienkulet/Liedko/assets/104018505/12595d51-6b08-4859-92e2-1c65ed004084)
+
+![orders](https://github.com/Lienkulet/Liedko/assets/104018505/19f793ed-bb5b-4dcb-b725-92cb756be064)
+
+![image](https://github.com/Lienkulet/Liedko/assets/104018505/ac9a2f67-8e8c-46e0-b10f-6a2981d4c308)
+
